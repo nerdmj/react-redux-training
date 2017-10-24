@@ -12,7 +12,6 @@ import userList from '../actions/userList'
 class Home extends Component{
 
   componentDidMount(){
-    // console.log(store);
     // Make a request for a users list
     axios.get('https://jsonplaceholder.typicode.com/users')
       .then(function (response) {
@@ -22,10 +21,6 @@ class Home extends Component{
         console.log(error);
       });
   };
-
-  // shouldComponentUpdate(nextProps, nextState){
-  //   return false;
-  // }
 
   render(){
     // console.log(this.props);
