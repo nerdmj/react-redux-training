@@ -11,16 +11,16 @@ import userList from '../actions/userList'
 
 class Home extends Component{
 
-  componentDidMount(){
-    // Make a request for a users list
-    axios.get('https://jsonplaceholder.typicode.com/users')
-      .then(function (response) {
-        store.dispatch(userList(response.data))
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  };
+  // componentDidMount(){
+  //   // Make a request for a users list
+  //   axios.get('https://jsonplaceholder.typicode.com/users')
+  //     .then(function (response) {
+  //       store.dispatch(userList(response.data))
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error);
+  //     });
+  // };
 
   render(){
     // console.log(this.props);

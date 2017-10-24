@@ -1,8 +1,21 @@
 const userIntialState = {
-  uuid:1,
+  uuid:3,
   loading: false,
   apidata:false,
-  list: []
+  list: [
+    {
+      'uuid': 1,
+      'name': 'manish',
+      'username':'mj',
+      'email': 'manish.jatwani@tothenew.com'
+    },
+    {
+      'uuid':2,
+      'name': 'alok',
+      'username':'alk',
+      'email': 'alok@tothenew.com'
+    }
+  ]
 }
 
 const userReducer = (state = userIntialState, action) => {
